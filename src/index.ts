@@ -4,6 +4,12 @@ import { searchDevtools } from 'electron-search-devtools';
 
 const isDev = process.env.NODE_ENV === 'development';
 
+//electron上で、http経由のコンテンツを読み込んだ時に発生。
+//デバック中は、local上でReactを動かしているので発生する。
+//パッケージ化すれば発生しないエラー。
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = '1';
+
+
 if (isDev) {
   const execPath =
     process.platform === 'win32'

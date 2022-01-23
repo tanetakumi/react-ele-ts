@@ -63,7 +63,7 @@ const main: Configuration = {
   ...common,
   target: 'electron-main',
   entry: {
-    main: './src/main.ts',
+    main: './src/index.ts',
   },
 };
 
@@ -79,7 +79,7 @@ const renderer: Configuration = {
   ...common,
   target: 'web',
   entry: {
-    renderer: './src/renderer.tsx',
+    renderer: './src/App.tsx',
   },
   plugins: [
     new MiniCssExtractPlugin(),

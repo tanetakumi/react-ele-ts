@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import { default as Hello} from './components/Hello';
+import { default as Hello} from '../components/Hello';
 
 import './styles.css';
 
@@ -21,12 +21,11 @@ ReactDOM.render(
 ReactDOM.render(
   <>
     <div className="container">
-     <Hello
+      <Hello
         title={'こんにちわ'}
         content={'挨拶'}
       /> 
     </div>
-    
   </>,
   document.getElementById('hello')
 );

@@ -1,5 +1,6 @@
 import { build } from 'electron-builder';
 
+
 build({
   config: {
     appId: 'com.example.app',
